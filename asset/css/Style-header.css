@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+:root {
+  --colorHeader: #183752;
+  --colorText: #ffff;
+  --shadowColor: rgba(89, 89, 89, 1);
+}
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "KoHo",monospace;
+  font-size: 18px;
+}
+body {
+  text-align: center;
+}
+.header {
+  background-color: var(--colorHeader);
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  height: 55px;
+  box-shadow: 0px 0px 6px 0px var(--shadowColor);
+}
+
+.header .img {
+  margin-top: 0;
+  margin-left: 1%;
+}
+.header .img {
+  height: 80px;
+  width: auto;
+  transition: all 0.1s;
+}
+
+#open,
+#close {
+  display: none;
+}
+.header img:hover {
+  transform: scale(1.1);
+}
+
+.header .options {
+  flex: 2;
+  align-items: center;
+}
+.header .nav-li {
+  list-style: none;
+}
+
+.header .nav-li li {
+  display: inline-block;
+  padding: 0 0.2rem;
+  margin: 0 0.8rem;
+}
+.header .nav-li li:hover {
+  transform: scale(1.125);
+  padding: auto;
+}
+.header .nav-li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--colorText);
+}
+
+@media screen and (max-width: 780px) {
+  #open{
+    display: block;
+    background-color: transparent;
+    color: antiquewhite;
+    border: none;
+  }
+
+  #close{
+    display: block;
+    background-color: transparent;
+    color: antiquewhite;
+    border: none;
+  }
+
+  .bi-x-lg{
+    font-size: x-large;
+  }
+
+  .bi-list {
+    font-size: xx-large;
+    
+  }
+
+  .header button:hover {
+    transform: scale(1.125);
+  }
+
+  .options-flex {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-end;
+    width: max-content;
+    padding: 1rem 1.2rem 1rem 0;
+    top: 0;
+    right: 0;
+    background-color: var(--colorHeader);
+  }
+
+  .options-flex .nav-li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .options-flex .nav-li li {
+    margin: 0.5rem 0;
+  }
+
+  .options-flex .nav-li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+
+  .invisible{
+    display: none;
+    visibility: hidden;
+  }
+}

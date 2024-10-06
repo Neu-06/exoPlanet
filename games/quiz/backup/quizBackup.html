@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Preguntas</title>
+    <link rel="stylesheet" href="css/quiz-styles.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div id="question-area">
+            <!-- Título de la pregunta -->
+            <h2 id="question-text">Pregunta</h2>
+
+            <!-- Respuestas -->
+            <div class="answers">
+                <label class="answer" id="answer1">
+                    <input type="radio" name="answer" value="incorrect"> Opción 1
+                </label>
+                <label class="answer" id="answer2">
+                    <input type="radio" name="answer" value="correct"> Opción 2
+                </label>
+                <label class="answer" id="answer3">
+                    <input type="radio" name="answer" value="incorrect"> Opción 3
+                </label>
+                <label class="answer" id="answer4">
+                    <input type="radio" name="answer" value="incorrect"> Opción 4
+                </label>
+            </div>
+
+            <!-- Botón de Siguiente -->
+            <button class="next-btn" onclick="nextQuestion()" disabled>Siguiente</button>
+        </div>
+    </div>
+
+    <!-- Contador de preguntas (opcional) -->
+    <div class="progress-container">
+        <div class="question-count">
+            <span>PREGUNTA</span> <span id="question-counter">1</span>/10
+        </div>
+    </div>
+
+    <script src="js/quiz-script.js"></script>
+</body>
+</html>

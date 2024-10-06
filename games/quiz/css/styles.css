@@ -1,0 +1,207 @@
+/* Estilo general */
+body {
+    background-color: #002b5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'pixel', cursive; /* Puedes usar una fuente de estilo pixel */
+    background-image: url('/games/quiz/images/fondo.png'); /* Aquí puedes poner la imagen de fondo espacial */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    text-align: center;
+    color: white;
+    cursor: default;
+}
+
+.title h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    cursor: default;
+}
+
+.title-container {
+    text-align: center; /* Centra el texto */
+    margin-top: 50px; /* Espacio encima del contenedor */
+    margin-top: 150px;
+}
+
+.title-container h1 {
+    font-size: 55px;
+    margin-bottom: 10px; /* Espacio entre el título y el subtítulo */
+}
+
+.subtitle {
+    font-size: 24px; /* Ajusta el tamaño de la fuente */
+    color: #ffffff; /* Cambia el color si es necesario */
+    margin-top: 10px; /* Espacio encima del subtítulo */
+}
+
+/* Estilo del botón Start */
+.start-button-container {
+    margin-top: 30px;
+}
+
+.star-container {
+    position: absolute;
+    top: 3%;
+    right: 1050px;
+}
+
+.start-btn {
+    background-color: #ffffff;
+    color: black;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 0px #000;
+}
+
+.start-btn:active {
+    transform: translateY(0);
+    box-shadow: 2px 2px 0px #000;
+}
+
+
+.animation-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    cursor: default;
+}
+
+/* Nave espacial */
+.ship-container {
+    position: absolute;
+    top: 3%;
+    right: 490px;
+}
+
+.ship-image {
+    width: 350px;
+    animation: move-ship 3s infinite alternate ease-in-out;
+}
+
+/* Estilos comunes para todas las imágenes de estrellas */
+.star-image {
+    width: 120px;
+    position: absolute; /* Permite que cada estrella se posicione individualmente */
+    animation: move-stars 5s infinite alternate ease-in-out; /* Animación */
+}
+
+/* Ajustes individuales para las posiciones de las estrellas */
+.star-container img:nth-child(1) { top: 50%; right: 100px; }
+.star-container img:nth-child(2) { top: 25%; left: 800px; }
+.star-container img:nth-child(3) { top: 10%; left: 530px; }
+.star-container img:nth-child(4) { top: 50%; right: 750px; }
+.star-container img:nth-child(5) { top: 50%; right: 750px; }
+
+/* Similar para meteoritos, rocas y nubes */
+.meteor-image {
+    width: 120px;
+    position: absolute;
+    animation: move-meteor 3.5s infinite alternate ease-in-out; /* Animación */
+}
+
+/* Ajustes de posición de meteoritos */
+.meteor-container img:nth-child(1) { top: 15%; right: 1060px; }
+.meteor-container img:nth-child(2) { top: 30%; right: 935px; }
+.meteor-container img:nth-child(3) { top: 5%; right: 100px; }
+
+/* Para las rocas */
+.rock-image {
+    width: 250px;
+    position: absolute;
+    animation: move-rock 2s infinite alternate ease-in-out; /* Animación */
+}
+
+/* Ajustes de posición de rocas */
+.rock-container img:nth-child(1) { top: 50%; right: 1100px; }
+.rock-container img:nth-child(2) { top: 15%; right: 270px; }
+.rock-container img:nth-child(3) { top: 5%; right: 810px; }
+.rock-container img:nth-child(4) { top: 75%; right: 50px; }
+
+/* Para las nubes */
+.cloud-image {
+    width: 170px;
+    position: absolute;
+    animation: move-clouds 5s infinite alternate ease-in-out; /* Animación */
+}
+
+
+/* Ajustes de posición de nubes */
+.cloud-container img:nth-child(1) { top: 65%; right: 950px; }
+.cloud-container img:nth-child(2) { top: 50%; right: 150px; }
+.cloud-container img:nth-child(3) { top: 80%; right: 500px; }
+
+
+/* Animaciones para cada tipo de imagen */
+@keyframes move-ship {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px); /* Mueve la nave 10px hacia abajo */
+    }
+}
+
+@keyframes move-stars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px); /* Mueve las estrellas hacia arriba */
+    }
+}
+
+@keyframes move-meteor {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px); /* Mueve el meteorito 15px hacia abajo */
+    }
+}
+
+@keyframes move-rock {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(8px); /* Mueve la roca 8px hacia abajo */
+    }
+}
+
+@keyframes move-clouds {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px); /* Mueve las nubes 10px hacia abajo */
+    }
+}
+
+
+.ship-image, .star-image, .meteor-image, .rock-image, .cloud-image {
+    cursor: default; /* Esto evita que el cursor se convierta en texto */
+}
+
+.image-class {
+    cursor: default; /* Para imágenes que no son interactivas */
+}

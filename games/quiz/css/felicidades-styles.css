@@ -1,0 +1,164 @@
+body {
+    background-color: #002b5c; /* Color de fondo */
+    color: white; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'pixel', cursive; /* Cambia la fuente si lo deseas */
+}
+
+.congratulations-container {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Centra el texto */
+}
+
+.congratulations-container h1 {
+    font-size: 65px; /* Tamaño del título */
+}
+
+.start-btn {
+    background-color: #ffffff; /* Color del botón */
+    color: black;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.start-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 0px #000;
+}
+
+.start-btn:active {
+    transform: translateY(0);
+    box-shadow: 2px 2px 0px #000;
+}
+
+
+.animation-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    cursor: default;
+}
+
+/* Nave espacial */
+.ship-container {
+    position: absolute;
+    top: 3%;
+    right: 490px;
+}
+
+.ship-image {
+    width: 350px;
+    animation: move-ship 3s infinite alternate ease-in-out;
+}
+
+/* Estilos comunes para todas las imágenes de estrellas */
+.star-image {
+    width: 120px;
+    position: absolute; /* Permite que cada estrella se posicione individualmente */
+    animation: move-stars 5s infinite alternate ease-in-out; /* Animación */
+}
+
+/* Ajustes individuales para las posiciones de las estrellas */
+.star-container img:nth-child(1) { top: 50%; right: 900px; }
+.star-container img:nth-child(2) { top: 25%; right: 800px; }
+
+
+/* Similar para meteoritos, rocas y nubes */
+.meteor-image {
+    width: 120px;
+    position: absolute;
+    animation: move-meteor 3.5s infinite alternate ease-in-out; /* Animación */
+}
+
+/* Ajustes de posición de meteoritos */
+.meteor-container img:nth-child(1) { top: 15%; right: 1060px; }
+.meteor-container img:nth-child(2) { top: 30%; right: 935px; }
+.meteor-container img:nth-child(3) { top: 5%; right: 100px; }
+
+/* Para las rocas */
+.rock-image {
+    width: 250px;
+    position: absolute;
+    animation: move-rock 2s infinite alternate ease-in-out; /* Animación */
+}
+
+/* Ajustes de posición de rocas */
+.rock-container img:nth-child(1) { top: 50%; right: 1100px; }
+.rock-container img:nth-child(2) { top: 15%; right: 270px; }
+.rock-container img:nth-child(3) { top: 5%; right: 810px; }
+.rock-container img:nth-child(4) { top: 75%; right: 50px; }
+
+/* Para las nubes */
+.cloud-image {
+    width: 170px;
+    position: absolute;
+    animation: move-clouds 5s infinite alternate ease-in-out; /* Animación */
+}
+
+
+/* Ajustes de posición de nubes */
+.cloud-container img:nth-child(1) { top: 65%; right: 950px; }
+.cloud-container img:nth-child(2) { top: 50%; right: 150px; }
+.cloud-container img:nth-child(3) { top: 80%; right: 500px; }
+
+
+/* Animaciones para cada tipo de imagen */
+@keyframes move-ship {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px); /* Mueve la nave 10px hacia abajo */
+    }
+}
+
+@keyframes move-stars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px); /* Mueve las estrellas hacia arriba */
+    }
+}
+
+@keyframes move-meteor {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px); /* Mueve el meteorito 15px hacia abajo */
+    }
+}
+
+@keyframes move-rock {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(8px); /* Mueve la roca 8px hacia abajo */
+    }
+}
+
+@keyframes move-clouds {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px); /* Mueve las nubes 10px hacia abajo */
+    }
+}

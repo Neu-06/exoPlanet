@@ -1,0 +1,75 @@
+:root {
+    --colorB: #183752;
+    --colorText: #ffff;
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: "KoHo", monospace;
+    font-size: 18px;
+}
+
+.exoplanet {
+    background-color: var(--colorB);
+    padding: 2rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.exoplanet h2 {
+    color: var(--colorText);
+    padding: 0 0 2rem 0;
+    font-size: xx-large;
+}
+
+.exoo {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 2rem; 
+}
+
+.content-exo {
+    flex: 1 1 calc(33.33% - 2rem);
+    max-width: calc(33.33% - 2rem); 
+}
+
+.content-exo img {
+    width: 100%; 
+    height: auto; 
+}
+
+.content-exo img:hover {
+    transform: scale(1.125);
+}
+
+.content-exo .bttn-inf {
+    margin-top: 15px;
+    border-radius: 10%;
+    padding: 0.5rem 0.2rem;
+    background-color: #D1C15D;
+    border: none;
+    color: var(--colorText);
+    font-size: medium;
+}
+@media only screen and (max-width: 750px) {
+
+    .exoplanet h2 {
+        font-size: large;
+    }
+
+    .exoo {
+        gap: 0.5rem; 
+    }
+    
+    .content-exo {
+        flex: 1 1 calc(33.33% - 1rem); 
+        max-width: calc(33.33% - 1rem);
+    }
+    .content-exo .bttn-inf {
+        margin-top: 10px;
+
+        padding: 0.5rem 0.2rem;
+    }
+  }

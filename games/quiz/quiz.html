@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Preguntas</title>
+    <link rel="stylesheet" href="/games/quiz/css/quiz-styles.css">
+
+    
+</head>
+
+<body>
+
+    <button id="btn" style="position: absolute; top: 0; right: 10px; border-radius: 10px; z-index: 99;padding: 1rem; background-color: white; margin: none;"><a style="text-decoration: none;" href="/asset/pages/minigame.html">Atras</a></button>
+    <!-- Contenedor principal de la pregunta y respuestas -->
+    <div class="quiz-container">
+        <div id="question-area">
+            <!-- Título de la pregunta -->
+            <h2 id="question-text">Pregunta</h2>
+
+            <!-- Respuestas como botones -->
+            <div class="answers">
+                <button class="answer-btn" id="answer1" onclick="checkAnswer(this)">Respuesta 1</button>
+                <button class="answer-btn" id="answer2" onclick="checkAnswer(this)">Respuesta 2</button>
+                <button class="answer-btn" id="answer3" onclick="checkAnswer(this)">Respuesta 3</button>
+                <button class="answer-btn" id="answer4" onclick="checkAnswer(this)">Respuesta 4</button>
+            </div>
+
+            <!-- Botón de Siguiente -->
+            <button class="next-btn" onclick="nextQuestion()" disabled>Siguiente</button>
+        </div>
+    </div>
+
+    <!-- Contador de preguntas (opcional) -->
+    <div class="progress-container">
+        <div class="question-count">
+            <span>PREGUNTA</span> <span id="question-counter">1</span>/10
+        </div>
+    </div>
+
+    <!-- Contenedores para las imágenes animadas -->
+    <div class="animation-container">
+        <div class="ship-container">
+            <img src="/games/quiz/images/NAVE-ESPACIAL.png" alt="Nave espacial" class="ship-image">
+        </div>
+
+    
+        <div class="star-container">
+            <img src="/games/quiz/images/estrellas/ESTRELLAS.png" alt="Estrella 1" class="star-image">
+        </div>
+
+        <div class="star-container2">
+            <img src="/games/quiz/images/estrellas/ESTRELLAS-2.png" alt="Estrella 2" class="star-image">
+        </div>
+
+        <div class="star-container3">
+            <img src="/games/quiz/images/estrellas/ESTRELLAS.png" alt="Estrella 3" class="star-image">
+        </div>
+
+        <div class="star-container4">
+            <img src="/games/quiz/images/estrellas/ESTRELLAS-2.png" alt="Estrella 4" class="star-image">
+        </div>
+
+        <div class="star-container5">
+            <img src="/games/quiz/images/estrellas/ESTRELLAS.png" alt="Estrella 5" class="star-image">
+        </div>
+
+        <div class="meteor-container">
+            <img src="/games/quiz/images/meteoritos/METEOROS.png" alt="Meteorito 1" class="meteor-image">
+        </div>
+
+        <div class="meteor-container2">
+            <img src="/games/quiz/images/meteoritos/METEOROS-2.png" alt="Meteorito 2" class="meteor-image">
+        </div>
+
+    
+        <div class="rock-container">
+            <img src="/games/quiz/images/rocas/ROCAS-1.png" alt="Roca espacial 1" class="rock-image">
+        </div>
+
+        <div class="rock-container2">
+            <img src="/games/quiz/images/rocas/ROCAS-2.png" alt="Roca espacial 2" class="rock-image">
+        </div>
+
+        <div class="rock-container3">
+            <img src="/games/quiz/images/rocas/ROCAS-3.png" alt="Roca espacial 3" class="rock-image">
+        </div>
+
+
+        <div class="cloud-container">
+            <img src="/games/quiz/images/nubes/NUBE.png" alt="Nube 1" class="cloud-image">
+        </div>
+
+        <div class="cloud-container2">
+            <img src="/games/quiz/images/nubes/NUBE-2.png" alt="Nube 2" class="cloud-image">
+        </div>
+
+        <div class="cloud-container3">
+            <img src="/games/quiz/images/nubes/NUBE-3.png" alt="Nube 3" class="cloud-image">
+        </div>
+
+    </div>
+    
+
+    <script src="/games/quiz/js/quiz-script.js"></script>
+</body>
+</html>

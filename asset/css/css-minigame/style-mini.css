@@ -1,0 +1,75 @@
+.box-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    background-image: url("/asset/img/exo/space.png");
+    padding: 1rem  1rem 5rem 1rem;
+}
+
+.box-info > div { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #3D8AC4;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; 
+}
+
+.box-info h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.box-info > div .content { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.imgg, .tp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: large;
+}
+
+.imgg {
+    max-width: 150px; 
+}
+
+.box-info > div img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.btn{
+    list-style: none;
+}
+.btn a{
+    text-decoration: none;
+}
+
+.btn li:hover{
+    transform: scale(1.1);
+}
+
+
+@media (min-width: 600px) {
+    .box-info > div .content {
+        flex-direction: row; 
+    }
+
+    .tp {
+        max-width: 300px; 
+    }
+}
+

@@ -1,0 +1,44 @@
+:root {
+    --colorB: #183752;
+    --colorText: #ffff;
+}
+
+.anuncio {
+    background-image: url("/asset/img/space.png");
+    padding: 2rem 15% 2rem 15%;
+    text-align: center;
+}
+
+.box-anuncio {
+    background-color: #F0A500;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+.box-anuncio div {
+    flex: 1; 
+    text-align: center;
+}
+
+.box-anuncio div p {
+    font-size: 50px;
+}
+
+.box-anuncio img {
+    width: 60%;
+    height: auto;
+}
+@media only screen and (max-width: 850px) {
+    .box-anuncio div p {
+        font-size: x-large;
+    }
+    
+    .box-anuncio img {
+        width: 80%;
+        height: auto;
+    }
+  }

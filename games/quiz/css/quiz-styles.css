@@ -1,0 +1,283 @@
+/* Fondo y cuerpo */
+body {
+    background-image: url('/games/quiz/images/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(15, 69, 245);
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    position: relative; 
+    color: #0e0d0d;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;  /* Alinea el contenedor a la izquierda */
+    align-items: center;
+}
+
+/* Contenedor del quiz */
+.quiz-container {
+    background-color: rgba(255, 142, 35, 0.959);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contenedor general para las animaciones */
+.animation-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Nave espacial */
+.ship-container {
+    position: absolute;
+    top: 40%;
+    right: 150px;
+}
+
+.ship-image {
+    width: 370px;
+    animation: move-ship 3s infinite alternate ease-in-out;
+}
+
+/* Estrellas */
+.star-container {
+    position: absolute;
+    top: 2%;
+    right: 1000px;
+}
+
+.star-container2 {
+    position: absolute;
+    top: 75%;
+    right: 430px;
+}
+
+.star-container3 {
+    position: absolute;
+    top: 85%;
+    right: 770px;
+}
+
+.star-container4 {
+    position: absolute;
+    top: 45%;
+    right: 120px;
+}
+
+.star-container5 {
+    position: absolute;
+    top: 40%;
+    right: 410px;
+}
+
+.star-image {
+    width: 120px;
+    animation: move-stars 4s infinite alternate ease-in-out;
+}
+
+/* Meteorito */
+.meteor-container {
+    position: absolute;
+    top: 50px;
+    right: 110px;
+}
+
+.meteor-container2 {
+    position: absolute;
+    top: 50px;
+    right: 380px;
+}
+
+.meteor-image {
+    width: 240px;
+    animation: move-meteor 3.5s infinite alternate ease-in-out;
+}
+
+
+/* Roca espacial */
+.rock-container {
+    position: absolute;
+    top: 270px;
+    right: 480px;
+}
+
+.rock-container2 {
+    position: absolute;
+    top: 65%;
+    right: 980px;
+}
+
+.rock-container3 {
+    position: absolute;
+    top: 1px;
+    right: 730px;
+}
+
+.rock-image {
+    width: 210px;
+    animation: move-rock 4.5s infinite alternate ease-in-out;
+}
+
+
+/* Nubes */
+.cloud-container {
+    position: absolute;
+    top: 85%;
+    right: 530px;
+}
+
+.cloud-container2 {
+    position: absolute;
+    top: 85%;
+    right: 270px;
+}
+
+.cloud-container3 {
+    position: absolute;
+    top: 85%;
+    right: 50px;
+}
+
+.cloud-image {
+    width: 130px;
+    animation: move-clouds 5s infinite alternate ease-in-out;
+}
+
+
+
+/* Animaciones */
+
+/* Animación de la nave */
+@keyframes move-ship {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* Animación de las estrellas */
+@keyframes move-stars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* Animación del meteorito */
+@keyframes move-meteor {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+/* Animación de las rocas */
+@keyframes move-rock {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+/* Animación de las nubes */
+@keyframes move-clouds {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+
+
+
+/* Estilo de los botones de respuestas */
+.answer-btn {
+    display: block;
+    background-color: #e0f7fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 95%;  /* Ajusta este valor para que ocupe casi todo el ancho */
+    border: 3px solid transparent;  /* El borde será transparente inicialmente */
+    transition: border-color 0.3s ease;
+    margin-left: auto;  /* Centramos el botón */
+    margin-right: auto; /* Centramos el botón */
+}
+
+/* Contenedor del progreso de las preguntas */
+.progress-container {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.question-count {
+    background-color: #000000a0;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.answer-btn:hover {
+    background-color: #b2ebf2;
+}
+
+.answer-btn:disabled {
+    background-color: #f0f0f0;  /* Cambia el fondo cuando los botones están deshabilitados */
+    cursor: not-allowed;
+}
+
+/* Botón de Siguiente */
+.next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.next-btn:disabled {
+    background-color: grey;  /* El botón deshabilitado se verá gris */
+}
+
+.next-btn:hover:enabled {
+    background-color: #004d40;
+}
+
+.image-class {
+    cursor: default; /* Para imágenes que no son interactivas */
+}
+
+

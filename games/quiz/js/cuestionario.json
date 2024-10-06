@@ -1,0 +1,225 @@
+{
+    "questions": [
+      {
+        "question": "¿Qué es un exoplaneta?",
+        "answers": [
+          {
+            "text": "Un planeta dentro del Sistema Solar",
+            "correct": false
+          },
+          {
+            "text": "Un planeta fuera del Sistema Solar",
+            "correct": true
+          },
+          {
+            "text": "Un satélite de la Tierra",
+            "correct": false
+          },
+          {
+            "text": "Un asteroide",
+            "correct": false
+          }
+        ]
+      },
+
+      {
+        "question": "¿Cuál es el método más común para detectar exoplanetas?",
+        "answers": [
+          {
+            "text": "Observación directa",
+            "correct": false
+          },
+          {
+            "text": "El método de tránsito",
+            "correct": true
+          },
+          {
+            "text": "El método de reflexión",
+            "correct": false
+          },
+          {
+            "text": "Micro-lentes gravitacionales",
+            "correct": false
+          }
+        ]
+      },
+
+      {
+        "question": "¿Cuál fue el primer exoplaneta descubierto?",
+        "answers": [
+          {
+            "text": "Kepler-22b",
+            "correct": false
+          },
+          {
+            "text": "51 Pegasi b",
+            "correct": true
+          },
+          {
+            "text": "Proxima Centauri b",
+            "correct": false
+          },
+          {
+            "text": "Gliese 581c",
+            "correct": false
+          }
+        ]
+      },
+
+      {
+        "question": "¿Cuántos exoplanetas se han confirmado hasta la fecha?",
+        "answers": [
+          {
+            "text": "Más de 500",
+            "correct": false
+          },
+          {
+            "text": "Más de 1,000",
+            "correct": false
+          },
+          {
+            "text": "Más de 5,000",
+            "correct": true
+          },
+          {
+            "text": "Más de 10,000",
+            "correct": false
+          }
+        ]
+      },
+
+      {
+        "question": "¿En qué año se descubrió el primer exoplaneta?",
+        "answers": [
+          {
+            "text": "1992",
+            "correct": true
+          },
+          {
+            "text": "1984",
+            "correct": false
+          },
+          {
+            "text": "2005",
+            "correct": false
+          },
+          {
+            "text": "2010",
+            "correct": false
+          }
+        ]
+      },
+
+      {
+        "question": "¿Qué misión espacial se dedica a la búsqueda de exoplanetas?",
+        "answers": [
+          {
+            "text": "Misión Cassini",
+            "correct": false
+          },
+          {
+            "text": "Misión Kepler",
+            "correct": true
+          },
+          {
+            "text": "Misión Apollo",
+            "correct": false
+          },
+          {
+            "text": "Misión Voyager",
+            "correct": false
+          }
+        ]
+      },
+
+      {
+        "question": "¿Cuál es el tipo más común de exoplaneta descubierto?",
+        "answers": [
+          {
+            "text": "Planetas rocosos",
+            "correct": false
+          },
+          {
+            "text": "Planetas gigantes gaseosos",
+            "correct": true
+          },
+          {
+            "text": "Planetas de hielo",
+            "correct": false
+          },
+          {
+            "text": "Planetas enanos",
+            "correct": false
+          }
+        ]
+      },
+
+      {
+        "question": "¿Qué instrumento se utiliza comúnmente para detectar exoplanetas?",
+        "answers": [
+          {
+            "text": "Telescopio Hubble",
+            "correct": false
+          },
+          {
+            "text": "Telescopio Kepler",
+            "correct": true
+          },
+          {
+            "text": "Telescopio James Webb",
+            "correct": false
+          },
+          {
+            "text": "Radiotelescopio",
+            "correct": false
+          }
+        ]
+      },
+
+      {
+        "question": "¿Cuál de estos planetas NO es un exoplaneta?",
+        "answers": [
+          {
+            "text": "Kepler-452b",
+            "correct": false
+          },
+          {
+            "text": "Júpiter",
+            "correct": true
+          },
+          {
+            "text": "Proxima Centauri b",
+            "correct": false
+          },
+          {
+            "text": "Gliese 581d",
+            "correct": false
+          }
+        ]
+      },
+
+      {
+        "question": "¿Cuál es la característica clave que hace de un planeta un 'exoplaneta'?",
+        "answers": [
+          {
+            "text": "Que orbita una estrella fuera del Sistema Solar",
+            "correct": true
+          },
+          {
+            "text": "Que tiene un anillo",
+            "correct": false
+          },
+          {
+            "text": "Que es más grande que la Tierra",
+            "correct": false
+          },
+          {
+            "text": "Que es más pequeño que Marte",
+            "correct": false
+          }
+        ]
+      }
+      
+    ]
+  }
+  

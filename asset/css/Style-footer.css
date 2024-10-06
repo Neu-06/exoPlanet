@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+:root {
+    --colorBFooter: #183752;
+    --colorText: #ffff;
+  --shadowColor: rgba(89, 89, 89, 1);
+}
+* {
+  box-sizing:0;
+  margin: 0;
+  padding: 0;
+  font-family: "KoHo", monospace;
+  font-size: 18px;
+}
+body {
+  text-align: center;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    background-color:var(--colorBFooter);
+    height: 50px;
+  }
+  .social-links {
+    height: 50px;
+    box-shadow: 0px 0px 4px 0px var(--shadowColor);
+    margin: 0;
+  }
+  .social-links h2 {
+    display: inline-block;
+    font-size: small;
+    padding-left: 1.5rem;
+    color: var(--colorText);
+  }
+  .social-links .by{
+    color: var(--textColor);
+    font-size: 8px;
+  }
+  .social-links a {
+    font-size: 20px;
+    display: inline-block;
+    padding: 0.4rem;
+    color: var(--colorText);
+    background-color: none;
+  }
+  .social-links a:hover {
+    transform: scale(1.1);
+    background-color: none;
+  }
+  
